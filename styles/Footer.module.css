@@ -1,0 +1,48 @@
+/* styles/Footer.module.css */
+
+.footer {
+    background: #000000;
+    padding: 20px 0;
+    margin-top: 40px; /* ← espace de 40px après la galerie */
+
+  }
+  
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff00ff;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .link:hover {
+    color: #ff00ff;
+  }
+  
+  .copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: #888;
+  }
+  

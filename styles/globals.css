@@ -1,8 +1,15 @@
+/* styles/globals.css */
+
 html, body, #__next {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-height: 100%;
-    overflow-y: auto;
-    background: #000;
-  }
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Dégradé noir → fuchsia */
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #ee91ee 100%
+  );
+  background-attachment: scroll;
+  overflow-x: hidden;
+}

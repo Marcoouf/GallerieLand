@@ -1,0 +1,88 @@
+/* styles/GallerySection.module.css */
+
+/* Wrapper de la galerie */
+.gallerySection {
+  padding: 20px 16px;   /* 20px haut/bas, 16px gauche/droite */
+    background: #111;
+    margin-bottom: 40px; /* ← espace de 40px avant le footer */
+
+  }
+  
+  /* Titre de la section */
+  .galleryTitle {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  /* Colonnes responsive : 1 / 2 / 3 colonnes */
+  .columns {
+    column-count: 1;
+    column-gap: 16px;
+  }
+  @media (min-width: 640px) {
+    .columns {
+      column-count: 2;
+    }
+  }
+  @media (min-width: 1024px) {
+    .columns {
+      column-count: 3;
+    }
+  }
+  
+  /* Wrapper de chaque carte pour éviter la cassure */
+  .cardWrapper {
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+  
+  /* Boîte à ratio pour conserver les proportions */
+  .card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #222;
+  }
+  
+  /* Image en « fill » et cover */
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Flou au survol */
+  .card:hover .image {
+    filter: blur(4px);
+  }
+  
+  /* Légende toujours au-dessus du flou, en bas du conteneur */
+  .caption {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff00ff;
+    font-size: 1rem;
+    text-shadow: 0 0 4px rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .card:hover .caption {
+    opacity: 1;
+  }
+  
+  .galleryGrid {
+    margin: 0 16px;       /* 16px de marge à gauche et à droite */
+    column-count: 3;
+    column-gap: 16px;
+  }
+  

@@ -48,43 +48,66 @@
   }
   
   .galleryGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* Masonry : crée des colonnes de largeur fixe */
+    column-count: 3;
+    column-gap: 16px;          /* espace entre les colonnes */
+    padding: 20px;
+    column-fill: balance;   /* Remplit chaque colonne de haut en bas */
   }
-  
+
   .artworkCard {
-    background: #222;
-    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    vertical-align: top; /* Aligne toujours en haut */
+    position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
+    background: #222;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
-  
-  .artworkCard:hover {
-    transform: translateY(-8px);
+    
+  .artworkCard:hover .artworkImage {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
   }
-  
+
+  .artworkCard:hover .artworkInfo {
+    opacity: 1;
+  }
+      
   .artworkImage {
+    display: block;
     width: 100%;
     height: auto;
   }
-  
-  .artworkInfo {
-    padding: 12px;
-  }
-  
-  .artworkTitle {
+
+/* Survol : titre en rose au bas */
+.artworkInfo {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  color: #ff00ff;
+  font-size: 1.25rem;
+  text-shadow: 0 0 4px rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: none;
+  pointer-events: none;
+}
+
+.artworkTitle {
     margin: 0;
     font-size: 1.25rem;
   }
-  
+    
   .artworkPrice {
-    margin: 4px 0 0;
-    font-size: 1rem;
-    color: #ff00ff;
+    display: none; /* Masquer le prix par défaut */
   }
+    
   
   /* Bounce animation for arrows */
   @keyframes bounce {

@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import PointCloudText from './PointCloudText'
 import styles from '../styles/PointCloudText.module.css'
 
-export default function CanvasBackground({ text = 'berecouf', count = 20000 }) {
+export default function CanvasBackground({ text = 'GalleryLand', count = 25000 }) {
   const containerRef = useRef()
   const [arrowCount, setArrowCount] = useState(0)
 
