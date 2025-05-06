@@ -1,5 +1,6 @@
 // pages/index.jsx
 import React from 'react'
+import Header from '../components/Header'
 import CanvasBackground from '../components/CanvasBackground'
 import ArrowsBar      from '../components/ArrowsBar'
 import GallerySection from '../components/GallerySection'
@@ -19,6 +20,8 @@ const artworks = [
 export default function Home() {
   return (
     <>
+      <Header />
+
       {/* Section 3D */}
       <CanvasBackground text="GalleryLand" count={30000} />
 

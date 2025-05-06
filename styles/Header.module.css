@@ -1,0 +1,75 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    padding: 1rem 0;
+    background: transparent;
+  }
+
+.innerHeader {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 9999px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    background: transparent;
+  }
+  
+  .button:hover {
+    color: white;
+    border-color: #ff00ff;
+    background: linear-gradient(90deg, #ff00ff, #ff66cc);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+  }
+      
+  .scrollText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLoop 8s linear infinite;
+  }
+  
+  .cart {
+    font-size: 1.7rem;
+    border: 2px solid white;
+    border-radius: 9999px;
+    padding: 0.4rem 0.6rem;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  .cartWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  
