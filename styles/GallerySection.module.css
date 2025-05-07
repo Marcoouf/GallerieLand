@@ -2,6 +2,10 @@
 
 /* Wrapper de la galerie */
 .gallerySection {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-size: 1.1rem;
   padding: 20px 16px;   /* 20px haut/bas, 16px gauche/droite */
     background: #111;
     margin-bottom: 40px; /* ← espace de 40px avant le footer */
@@ -10,8 +14,11 @@
   
   /* Titre de la section */
   .galleryTitle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     color: #fff;
-    font-size: 2rem;
     margin-bottom: 16px;
     text-align: center;
   }
@@ -65,12 +72,15 @@
   
   /* Légende toujours au-dessus du flou, en bas du conteneur */
   .caption {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     position: absolute;
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
     color: #ff00ff;
-    font-size: 1rem;
     text-shadow: 0 0 4px rgba(0,0,0,0.7);
     opacity: 0;
     transition: opacity 0.3s ease;

@@ -1,8 +1,13 @@
 /* styles/Footer.module.css */
 
 .footer {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     background: #000000;
     padding: 20px 0;
+    text-align: left;
     margin-top: 40px; /* ← espace de 40px après la galerie */
 
   }
@@ -10,25 +15,43 @@
   .inner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem; /* ← assure une marge interne */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     color: #fff;
   }
-  
+
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
     color: #ff00ff;
+    margin-top: 2px;
   }
-  
+.logoGroup {
+  display: flex;
+  align-items: center;
+  padding-left: 0;         /* retire la marge à gauche s’il y en a */
+  margin-left: 0;          /* retire une potentielle déviation */
+}
+
   .nav {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     display: flex;
     gap: 16px;
   }
   
   .link {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -39,10 +62,30 @@
   }
   
   .copy {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 0.8rem;
     width: 100%;
     text-align: center;
     margin-top: 12px;
-    font-size: 0.875rem;
     color: #888;
   }
-  
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}  
+
+.logoImage {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .logoLink:hover .logo {
+    color: #ff66cc;
+    text-shadow: 0 0 8px #ff66cc;
+  }

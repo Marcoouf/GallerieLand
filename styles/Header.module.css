@@ -1,3 +1,5 @@
+/* styles/Header.module.css */
+
 .headerContainer {
     position: fixed;
     top: 0;
@@ -5,28 +7,31 @@
     z-index: 50;
     padding: 1rem 0;
     background: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
-
-.innerHeader {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.navWrapper {
+  
+  .innerHeader {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navWrapper {
     display: flex;
     align-items: center;
     gap: 1rem;
   }
   
-  
-  .navLinks {
+  .cartWrapper {
     display: flex;
-    gap: 1rem;
+    align-items: center;
   }
   
   .button {
@@ -34,16 +39,17 @@
     padding: 0.5rem 1.5rem;
     border: 2px solid white;
     border-radius: 9999px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
+    font-weight: 300;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    position: relative;
+    text-decoration: none;
     background: transparent;
+    color: white;
   }
   
   .button:hover {
@@ -52,7 +58,7 @@
     background: linear-gradient(90deg, #ff00ff, #ff66cc);
     box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
   }
-      
+  
   .scrollText {
     display: inline-block;
     white-space: nowrap;
@@ -62,14 +68,27 @@
   .cart {
     font-size: 1.7rem;
     border: 2px solid white;
-    border-radius: 9999px;
+    border-radius: 50%;
     padding: 0.4rem 0.6rem;
     transition: all 0.3s ease;
     color: white;
-  }
-  .cartWrapper {
-    display: flex;
-    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 1.1rem;
   }
   
+  .cart:hover {
+    color: #ff00ff;
+    border-color: #ff00ff;
+  }
+  
+  @keyframes scrollLoop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
   
