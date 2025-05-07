@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '/Users/marcouflebar/Documents/berecoufV2/styles/Header.module.css';
+import styles from '../styles/Header.module.css'; // si Header.jsx est dans /components
 
 export default function Header() {
   return (
