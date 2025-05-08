@@ -11,9 +11,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <CanvasBackground/>
-      <GallerySection artworks={oeuvres} />
-      <Footer />
+      <main> <section id="accueil"> <CanvasBackground/></section>
+      <section id="gallery"> <GallerySection artworks={oeuvres} /></section>
+      <section id="contact"> <Footer /></section>
+      </main>
+      
     </>
   );
 }
