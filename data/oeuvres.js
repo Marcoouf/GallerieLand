@@ -71,7 +71,7 @@ export const oeuvres = [
       {
         id: 7,
         slug: 'art7',
-        title: '7e œuvre',
+        title: 'V for Victory',
         artist: 'Marcouf Lebar',
         src: '/gallery/art7.webp',
         width: 1565,
@@ -114,7 +114,7 @@ export const oeuvres = [
         id: 11,
         slug: 'art11',
         title: 'Lempire contre attaque',
-        artist: 'Marcouf Lebar',
+        artist: 'Camille Dubois',
         src: '/gallery/art11.webp',
         width: 1600,
         height: 881,
